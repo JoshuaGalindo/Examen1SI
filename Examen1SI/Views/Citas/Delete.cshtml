@@ -1,0 +1,167 @@
+﻿@model Examen1SI.Models.Citasmedicas.Cita_Medica
+
+@{
+    ViewData["Title"] = "Cancelar";
+
+}
+
+<h1>Cancelar Cita</h1>
+<h3>¿Está seguro(a) de cancelar esta cita?</h3>
+
+<div>
+    <h4>Cita programada</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CitaNombre)
+
+
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CitaNombre)
+
+        </dd>
+    </dl>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CitaSNombre)
+
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CitaSNombre)
+
+        </dd>
+    </dl>
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CitaApellido)
+
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CitaApellido)
+
+        </dd>
+    </dl>
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CitaCorreo)
+
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CitaCorreo)
+
+        </dd>
+    </dl>
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CitaNombreAcom)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CitaNombreAcom)
+        </dd>
+    </dl>
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CitaApellidoAcom)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CitaApellidoAcom)
+        </dd>
+    </dl>
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Direccion1)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Direccion1)
+        </dd>
+    </dl>
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Direccion2)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Direccion2)
+        </dd>
+    </dl>
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Ciudad)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Ciudad)
+        </dd>
+    </dl>
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Estado)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Estado)
+        </dd>
+    </dl>
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CodPost)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CodPost)
+        </dd>
+    </dl>
+
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CodAreaTel)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CodAreaTel)
+        </dd>
+    </dl>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NumTel)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NumTel)
+        </dd>
+    </dl>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CodAreaWa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CodAreaWa)
+        </dd>
+    </dl>
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NumWa)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NumWa)
+        </dd>
+    </dl>
+
+</div>
+
+<div>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="CitaID" />
+        <input type="submit" class="btn btn-danger" value="Borrar" />
+        <a asp-action="Index" class="btn btn-success">Regresar</a>
+
+
+    </form>
+
+
+
+</div>

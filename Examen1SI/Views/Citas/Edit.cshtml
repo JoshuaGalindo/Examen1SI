@@ -1,0 +1,189 @@
+﻿@model Examen1SI.Models.Citasmedicas.Cita_Medica
+
+@{
+    ViewData["Title"] = "Editar Citas";
+}
+
+<h2>Editar Cita</h2>
+
+<hr />
+
+<div class="row">
+   
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="CitaID" />
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h5>
+                            Nombres y Apellidos del Paciente <label style="color:red;">*</label>
+                        </h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <input asp-for="CitaNombre" class="form-control" />
+                        <span asp-validation-for="CitaNombre" class="text-danger"></span>
+                        <label asp-for="CitaNombre" class="control-label"></label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input asp-for="CitaSNombre" class="form-control" />
+                        <span asp-validation-for="CitaSNombre" class="text-danger"></span>
+                        <label asp-for="CitaSNombre" class="control-label"></label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input asp-for="CitaApellido" class="form-control" />
+                        <span asp-validation-for="CitaApellido" class="text-danger"></span>
+                        <label asp-for="CitaApellido" class="control-label"></label>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h5>
+                            Correo Electronico <label style="color:red;">*</label>
+                        </h5>
+                    </div>
+                    <div class="col-sm-5">
+                        <input asp-for="CitaCorreo" class="form-control" />
+                        <span asp-validation-for="CitaCorreo" class="text-danger"></span>
+                        <label asp-for="CitaCorreo" class="control-label"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h5>
+                            Nombre del acompañante
+                        </h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <input asp-for="CitaNombreAcom" class="form-control" />
+                        <span asp-validation-for="CitaNombreAcom" class="text-danger"></span>
+                        <label asp-for="CitaNombreAcom" class="control-label"></label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input asp-for="CitaApellidoAcom" class="form-control" />
+                        <span asp-validation-for="CitaApellidoAcom" class="text-danger"></span>
+                        <label asp-for="CitaApellidoAcom" class="control-label"></label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h5>
+                            Dirección <label style="color:red;">*</label>
+                        </h5>
+                    </div>
+                    <div class="col-sm-6">
+                        <input asp-for="Direccion1" class="form-control" />
+                        <span asp-validation-for="Direccion1" class="text-danger"></span>
+                        <label asp-for="Direccion1" class="control-label"></label>
+
+                        <input asp-for="Direccion2" class="form-control" />
+                        <span asp-validation-for="Direccion2" class="text-danger"></span>
+                        <label asp-for="Direccion2" class="control-label"></label>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h5>            </h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <input asp-for="Ciudad" class="form-control" />
+                        <span asp-validation-for="Ciudad" class="text-danger"></span>
+                        <label asp-for="Ciudad" class="control-label"></label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input asp-for="Estado" class="form-control" />
+                        <span asp-validation-for="Estado" class="text-danger"></span>
+                        <label asp-for="Estado" class="control-label"></label>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h5>            </h5>
+                    </div>
+                    <div class="col-sm-3">
+                        <input asp-for="CodPost" class="form-control" />
+                        <span asp-validation-for="CodPost" class="text-danger"></span>
+                        <label asp-for="CodPost" class="control-label"></label>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h5>
+                            Número de teléfono <label style="color:red;">*</label>
+                        </h5>
+                    </div>
+                    <div class="col-sm-2">
+                        <input asp-for="CodAreaTel" class="form-control" />
+                        <span asp-validation-for="CodAreaTel" class="text-danger"></span>
+                        <label asp-for="CodAreaTel" class="control-label"></label>
+                    </div>
+                    <div class="col-sm-1">
+                        <label>-</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input asp-for="NumTel" class="form-control" />
+                        <span asp-validation-for="NumTel" class="text-danger"></span>
+                        <label asp-for="NumTel" class="control-label"></label>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="form-group">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <h5>
+                            Número de WhatsApp
+                        </h5>
+                    </div>
+                    <div class="col-sm-2">
+                        <input asp-for="CodAreaWa" class="form-control" />
+                        <span asp-validation-for="CodAreaWa" class="text-danger"></span>
+                        <label asp-for="CodAreaWa" class="control-label"></label>
+                    </div>
+                    <div class="col-sm-1">
+                        <label>-</label>
+                    </div>
+                    <div class="col-sm-3">
+                        <input asp-for="NumWa" class="form-control" />
+                        <span asp-validation-for="NumWa" class="text-danger"></span>
+                        <label asp-for="NumWa" class="control-label"></label>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="form-group">
+                <input type="submit" value="Guardar" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-warning">Regresar</a>
+
+            </div>
+        </form>
+
+    
+
+</div>
+
+
+@section Scripts{
+    @{ await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+}

@@ -1,0 +1,49 @@
+﻿<Properties StartupConfiguration="{B595C455-BE29-4578-80E3-774A6CECC6D9}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Examen1SI/Views/Citas/Details.cshtml">
+    <Files>
+      <File FileName="Examen1SI/Startup.cs" Line="20" Column="53" />
+      <File FileName="Examen1SI/appsettings.json" Line="3" Column="67" />
+      <File FileName="Examen1SI/Models/Citas medicas/Cita_Medica.cs" Line="28" Column="1" />
+      <File FileName="Examen1SI/Data/ApplicationDbContext.cs" Line="20" Column="1" />
+      <File FileName="Examen1SI/Controllers/CitasController.cs" Line="126" Column="34" />
+      <File FileName="Examen1SI/Views/Citas/Index.cshtml" Line="40" Column="26" />
+      <File FileName="Examen1SI/Views/Citas/Create.cshtml" Line="98" Column="11" />
+      <File FileName="Examen1SI/Migrations/20210618020141_AgregarCitas.cs" Line="1" Column="1" />
+      <File FileName="Examen1SI/Views/Shared/_Layout.cshtml" Line="28" Column="92" />
+      <File FileName="Examen1SI/Views/Citas/Edit.cshtml" Line="15" Column="53" />
+      <File FileName="Examen1SI/Views/Citas/Delete.cshtml" Line="25" Column="1" />
+      <File FileName="Examen1SI/Views/Citas/Details.cshtml" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Examen1SI" expanded="True">
+            <Node name="Examen1SI" expanded="True">
+              <Node name="Dependencies" expanded="True" />
+              <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True" />
+              <Node name="Migrations" expanded="True" />
+              <Node name="Models" expanded="True">
+                <Node name="Citasmedicas" expanded="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="Citas" expanded="True">
+                  <Node name="Details.cshtml" selected="True" />
+                </Node>
+                <Node name="Home" expanded="True" />
+                <Node name="Shared" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.ItemProperties.Examen1SI PreferredExecutionTarget="/Users/Joshi/Documents/escritorio/Firefox.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
